@@ -8,6 +8,7 @@ SITEURL = ''
 PATH = 'content'
 
 THEME = 'notmyidea'
+THEME = 'themes/justified'
 
 # theme options:
 
