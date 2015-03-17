@@ -32,7 +32,7 @@
     <!-- BEGIN Twilli Air imports -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -73,7 +73,7 @@
     <!-- BEGIN Twilli Air imports -->
     <div class="background-image-overlay"></div>
 
-    <div id="outer-background-container" data-default-background-img="{{ SITEURL }}/theme/assets/images/other_images/barbed-hand.jpg" style="background-image:url(assets/images/other_images/barbed-hand.jpg);"></div>
+    <div id="outer-background-container" data-default-background-img="{{ SITEURL }}/theme/assets/images/other_images/default-bg.jpg" style="background-image:url(assets/images/other_images/default-bg.jpg);"></div>
     <!-- end: #outer-background-container -->    
 
     <!-- Outer Container -->
@@ -83,19 +83,26 @@
       <section id="left-sidebar">
         
         <div class="logo">
-          <a href="#intro" class="link-scroll"><img src="{{ SITEURL }}/theme/assets/images/other_images/logo.png" alt="The Justified"></a>
+          <a href="#intro" class="link-scroll">
+		  <!--
+		  <img src="{{ SITEURL }}/theme/assets/images/other_images/logo.png" alt="The Justified">
+		  <img src="http://lorempixel.com/g/117/52" alt="{{SITENAME|upper}}">
+		  -->
+		  <img src="{{ SITEURL }}/theme/assets/images/other_images/guitar_with_wings.png" alt="{{SITENAME|upper}}">
+  </a>
+  <!-- <p>{{SITENAME|upper}}</p> -->
         </div><!-- .logo -->
 
         <!-- Menu Icon for smaller viewports -->
         <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
 
         <ul id="main-menu">
-          <li id="menu-item-text" class="menu-item scroll"><a href="#text">Text</a></li>
-          <li id="menu-item-carousel" class="menu-item scroll"><a href="#carousel">Carousel</a></li>
-          <li id="menu-item-grid" class="menu-item scroll"><a href="#band">Band</a></li>
-          <li id="menu-item-featured" class="menu-item scroll"><a href="#featured">Featured</a></li>
-          <li id="menu-item-contact" class="menu-item scroll"><a href="#contact">Contact</a></li>
-          <li id="menu-item-mailinglist" class="menu-item scroll"><a href="https://thejustifiedband.us10.list-manage.com/subscribe/?u=f38b0b9818045c2e07867b446&amp;id=7c98dd54be" target="_blank">mailing list</a>
+		<li id="menu-item-grid" class="menu-item scroll"><a href="{{SITEURL}}/#">The Justified</a></li>
+		<!--
+          <li id="menu-item-grid" class="menu-item scroll"><a href="#music">Music</a></li>
+	  -->
+		<li id="menu-item-grid" class="menu-item scroll"><a href="{{SITEURL}}/#band">Band</a></li>
+		<li id="menu-item-contact" class="menu-item scroll"><a href="{{SITEURL}}/#contact">Contact</a></li>
 
         </ul><!-- #main-menu -->
 
@@ -119,7 +126,7 @@
         <ul class="social-icons">
           <li><a href="https://www.facebook.com/pages/The-Justified/1595206920711446" target="_blank" title="Facebook"><img src="{{ SITEURL }}/theme/assets/images/theme_images/social_icons/facebook.png" alt="Facebook"></a></li>
           <li><a href="https://twitter.com/TheJustifiedTX" target="_blank" title="Twitter"><img src="{{ SITEURL }}/theme/assets/images/theme_images/social_icons/twitter.png" alt="Twitter"></a></li>
-          <li><a href="#" target="_blank" title="Youtube"><img src="{{ SITEURL }}/theme/assets/images/theme_images/social_icons/youtube.png" alt="Google+"></a></li>
+          <li><a href="http://youtu.be/uMr4FASf6xc?list=PLX4j_doh3t5xRdXKAaJScyp3omLcfS196" target="_blank" title="Youtube"><img src="{{ SITEURL }}/theme/assets/images/theme_images/social_icons/youtube.png" alt="Google+"></a></li>
           <!--
           <li><a href="#" target="_blank" title="Google+"><img src="{{ SITEURL }}/theme/assets/images/theme_images/social_icons/googleplus.png" alt="Google+"></a></li>
           -->
