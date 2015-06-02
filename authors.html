@@ -42,6 +42,8 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
     <!-- END Twilli Air imports -->
+
+
 </head>
 
 <body id="index" class="home">
@@ -57,27 +59,22 @@
       <!-- Left Sidebar -->
       <section id="left-sidebar">
         
-        <div class="logo">
-          <a href="#intro" class="link-scroll">
-		  <!--
-		  <img src="/theme/assets/images/other_images/logo.png" alt="The Justified">
-		  <img src="http://lorempixel.com/g/117/52" alt="THE JUSTIFIED">
-		  -->
-		  <img src="/theme/assets/images/other_images/guitar_with_wings.png" alt="THE JUSTIFIED">
-  </a>
-  <!-- <p>THE JUSTIFIED</p> -->
+        <div class="logo" onclick="scroll_to_top()">
+		<p>THE JUSTIFIED</p>
+		<img src="/theme/assets/images/other_images/guitar_with_wings.png" alt="THE JUSTIFIED">
         </div><!-- .logo -->
 
         <!-- Menu Icon for smaller viewports -->
         <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
 
         <ul id="main-menu">
-		<li id="menu-item-grid" class="menu-item scroll"><a href="/#">The Justified</a></li>
 		<!--
+		<li id="menu-item-grid" class="menu-item scroll"><a href="/#">The Justified</a></li>
           <li id="menu-item-grid" class="menu-item scroll"><a href="#music">Music</a></li>
 	  -->
-		<li id="menu-item-grid" class="menu-item scroll"><a href="/#band">Band</a></li>
-		<li id="menu-item-contact" class="menu-item scroll"><a href="/#contact">Contact</a></li>
+		<li id="menu-item-grid" class="menu-item scroll"><a href="/#">Band</a></li>
+		<li id="menu-item-grid" class="menu-item scroll"><a href="/#soundcloud">Music</a></li>
+		<li id="menu-item-contact" class="menu-item scroll"><a href="/#contact">Connect</a></li>
 
         </ul><!-- #main-menu -->
 
@@ -100,6 +97,16 @@
         <!-- Go to Top -->
         <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
 
+	<!--
+	<div class="audioplayer">
+		<audio preload></audio>
+		<ul>
+			<li><a href="#" data-src="/theme/assets/media/EmptyGlass.mp3">Empty Glass</a></li>
+			<li><a href="#" data-src="http://kolber.github.io/audiojs/demos/mp3/02-juicy-r.mp3">juicy-r</a></li>
+			<li><a href="#" data-src="http://kolber.github.io/audiojs/demos/mp3/03-its-all-about-the-crystalizabeths.mp3">it's all about the crystalizabeths</a></li>
+		</ul>
+	</div>
+	-->
         <ul class="social-icons">
           <li><a href="https://www.facebook.com/pages/The-Justified/1595206920711446" target="_blank" title="Facebook"><img src="/theme/assets/images/theme_images/social_icons/facebook.png" alt="Facebook"></a></li>
           <li><a href="https://twitter.com/TheJustifiedTX" target="_blank" title="Twitter"><img src="/theme/assets/images/theme_images/social_icons/twitter.png" alt="Twitter"></a></li>
@@ -175,6 +182,55 @@
     <!--[if lt IE 9]>
     <script>contact_form_IE9_placeholder_fix();</script>
     <![endif]-->  
+
+    <!-- BEGIN audiojs library -->
+    <script src="/theme/assets/js/audio.min.js"></script>
+    <script>
+      $(function() { 
+        // Setup the player to autoplay the next track
+        var a = audiojs.createAll({
+          trackEnded: function() {
+            var next = $('ol li.playing').next();
+            if (!next.length) next = $('ol li').first();
+            next.addClass('playing').siblings().removeClass('playing');
+            audio.load($('a', next).attr('data-src'));
+            audio.play();
+          }
+        });
+        
+        // Load in the first track
+        var audio = a[0];
+            first = $('ol a').attr('data-src');
+        $('ol li').first().addClass('playing');
+        audio.load(first);
+
+        // Load in a track on click
+        $('ol li').click(function(e) {
+          e.preventDefault();
+          $(this).addClass('playing').siblings().removeClass('playing');
+          audio.load($('a', this).attr('data-src'));
+          audio.play();
+        });
+        // Keyboard shortcuts
+        $(document).keydown(function(e) {
+          var unicode = e.charCode ? e.charCode : e.keyCode;
+             // right arrow
+          if (unicode == 39) {
+            var next = $('li.playing').next();
+            if (!next.length) next = $('ol li').first();
+            next.click();
+            // back arrow
+          } else if (unicode == 37) {
+            var prev = $('li.playing').prev();
+            if (!prev.length) prev = $('ol li').last();
+            prev.click();
+            // spacebar
+          } else if (unicode == 32) {
+            audio.playPause();
+          }
+        })
+      });
+    </script>
 
   </body>
 </html>
