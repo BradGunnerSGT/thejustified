@@ -1,0 +1,27 @@
+.top-bar-section li a:not(.button),
+.top-bar li.name a
+{
+	color: #d60;
+	font-family: 'Rock Salt', cursive;
+}
+
+.top-bar li.name a {
+	font-size: 120%;
+}
+
+body {
+	/* background-color: #666; */
+}
+
+
+.footer-panel li a:not(.button) {
+	font-size: 200%;
+}
+
+.footer-panel,
+.footer-panel li a:not(.button)
+{
+	color: #666;
+}
+
+
