@@ -11,6 +11,8 @@
 
 body {
 	/* background-color: #666; */
+	background-color: #000;
+	color: #666;
 }
 
 
@@ -24,4 +26,8 @@ body {
 	color: #666;
 }
 
+.reversed {
+	color: #fff;
+	background-color: #000;
+}
 
