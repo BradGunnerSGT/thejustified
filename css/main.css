@@ -35,3 +35,16 @@ body {
 	background-color: #000;
 }
 
+ul.menu-list {
+	list-style-type: none;
+	text-align: center;
+}
+
+ul.menu-list li {
+	display: inline-block;
+}
+
+.padded {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
