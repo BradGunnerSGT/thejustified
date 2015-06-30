@@ -1,12 +1,16 @@
 .top-bar-section li a:not(.button),
 .top-bar li.name a
 {
-	color: #d60;
+	color: #cbcbcb;
 	font-family: 'Rock Salt', cursive;
 }
 
 .top-bar li.name a {
 	font-size: 120%;
+}
+
+.top-bar {
+	height: 50px;
 }
 
 body {
