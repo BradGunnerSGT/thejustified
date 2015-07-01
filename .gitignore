@@ -1,3 +1,4 @@
 Gemfile.lock
 .sass-cache
+.ink-cache
 _site
