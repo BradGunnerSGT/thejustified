@@ -20,12 +20,12 @@ body {
 }
 
 
-.footer-panel li a:not(.button) {
+.footer-panel i {
 	font-size: 200%;
 }
 
 .footer-panel,
-.footer-panel li a:not(.button)
+.footer-panel i:not(.button)
 {
 	color: #666;
 }
