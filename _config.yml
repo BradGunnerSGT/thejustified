@@ -1,14 +1,19 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: The Justified
+email: booking@thejustifiedband.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  The Justified was formed in 2014 and plays a wide variety of Texas Country,
+  Classic Country, Classic Rock, and 80's/90's Rock/Pop. We play everything
+  from Dwight Yoakam to Metallica and we can bring the party to any event.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
+#url: "http://thejustifiedband.com" # the base hostname & protocol for your site
+url: "" # leaving this empty means that everything is relative to the root of your site, even when testing locally
+twitter_username: TheJustifiedTX
 github_username:  jekyll
+facebook_url: "https://www.facebook.com/pages/The-Justified/1595206920711446"
+youtube_url: "http://youtu.be/uMr4FASf6xc?list=PLX4j_doh3t5xRdXKAaJScyp3omLcfS196"
+show_rss: false
 
 # Build settings
 markdown: kramdown
+

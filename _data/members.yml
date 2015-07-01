@@ -1,0 +1,34 @@
+- name: "Roy Eastwood"
+  instrument: "Vocals, Guitars"
+  image: roy.png
+  description: 
+    Roy Lee Eastwood lives in San Marcos, Texas and has been an active
+    musician in several bands trhought out the Central Texas area. He is
+    currently the lead singer of The Justified as well as the band Prototype.
+- name: "Wayne Barnhart"
+  instrument: "Guitars"
+  image: wayne.png
+  description: 
+    Wayne Barnhart grew up in Odessa, TX and now resides in Corpus Christi, TX.
+    Wayne started playing guitar at an early age and he has played in a variety
+    of Heavy Metal and Rock bands over the years.  Wayne has many influences
+    from Steve Vai to Alex Skolnick and Zakk Wylde.  Wayne plays Ibanez guitars
+    and Egnater amps.
+- name: "Thomas Scruggs"
+  instrument: "Bass, Vocals"
+  image: thomas.png
+  description: 
+    Thomas Scruggs grew up in Odessa, Texas and started his lifelong musical
+    journey playing mandolin at age 6, learned the violin at age 10, picked up the
+    electric bass at 15 and has been laying down grooves ever since.  Thomas
+    listens to a wide variety of musicians and musical styles, and credits diverse
+    musicians such as Paul McCartney, Sting, Paul Simon, Les Claypool for
+    influencing his sound.
+- name: "Mark McCoy"
+  instrument: "Drums"
+  image: mark.png
+  description: 
+    Mark McCoy was born and raised in San Antonio
+    and has played drums and percussion in several bands throughout the years,
+    ranging from the “heavy lounge” of Gnat King Kong to funk to rock to country.
+    Mark plays Gretsch drums, Vater sticks, and Paiste cymbals. 

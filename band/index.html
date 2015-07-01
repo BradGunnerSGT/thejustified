@@ -1,0 +1,19 @@
+---
+layout: page
+title: ""
+---
+
+</div>
+{% for member in site.data.members %}
+<div class="row padded ">
+    <div class="small-3 columns">
+        <a id="{{member.name | downcase | remove:' '}}" class="anchor"></a>
+	<img src="{{site.baseurl}}/images/{{member.image}}"/>
+    </div>
+    <div class="small-9 columns">
+	<h3>{{member.name}}</h3>
+	<p>{{member.description}}
+    </div>
+</div>
+{% endfor %}
+<div>
