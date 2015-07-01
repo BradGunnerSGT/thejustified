@@ -1,0 +1,56 @@
+.top-bar-section li a:not(.button),
+.top-bar li.name a
+{
+	color: #cbcbcb;
+	font-family: 'Rock Salt', cursive;
+}
+
+.top-bar li.name a {
+	font-size: 120%;
+}
+
+.top-bar {
+	height: 50px;
+}
+
+body {
+	/* background-color: #666; */
+	background-color: #000;
+	color: #666;
+}
+
+
+.footer-panel i {
+	font-size: 200%;
+}
+
+.footer-panel,
+.footer-panel i:not(.button)
+{
+	color: #666;
+}
+
+.reversed {
+	color: #fff;
+	background-color: #000;
+}
+
+ul.menu-list {
+	list-style-type: none;
+	text-align: center;
+}
+
+ul.menu-list li {
+	display: inline-block;
+        float: none;
+}
+
+.padded {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.anchor {
+	position: relative;
+	padding-top: 150px;
+}
