@@ -3,7 +3,7 @@
       <!-- Band photos/links -->
       <ul class="small-block-grid-2 medium-block-grid-4">
          {% for member in site.data.members %}
-	 <li><a href="{{site.baseurl}}/band/#{{member.name | downcase | remove:' '}}"><img src="{{site.baseurl}}/images/{{member.image}}" /></a></li>
+	 <li><a href="{{site.baseurl}}/band/#{{member.name | downcase | remove:' '}}"><img src="{{site.baseurl}}/images/{{member.thumbnail}}" /></a></li>
          {% endfor %}
       </ul>
     </div>

@@ -1,6 +1,7 @@
 - name: "Roy Eastwood"
   instrument: "Vocals, Guitars"
   image: roy.png
+  thumbnail: roy-small.png
   description: 
     Roy Lee Eastwood lives in San Marcos, Texas and has been an active
     musician in several bands trhought out the Central Texas area. He is
@@ -8,6 +9,7 @@
 - name: "Wayne Barnhart"
   instrument: "Guitars"
   image: wayne.png
+  thumbnail: wayne-small.png
   description: 
     Wayne Barnhart grew up in Odessa, TX and now resides in Corpus Christi, TX.
     Wayne started playing guitar at an early age and he has played in a variety
@@ -17,6 +19,7 @@
 - name: "Thomas Scruggs"
   instrument: "Bass, Vocals"
   image: thomas.png
+  thumbnail: thomas-small.png
   description: 
     Thomas Scruggs grew up in Odessa, Texas and started his lifelong musical
     journey playing mandolin at age 6, learned the violin at age 10, picked up the
@@ -27,6 +30,7 @@
 - name: "Mark McCoy"
   instrument: "Drums"
   image: mark.png
+  thumbnail: mark-small.png
   description: 
     Mark McCoy was born and raised in San Antonio
     and has played drums and percussion in several bands throughout the years,
