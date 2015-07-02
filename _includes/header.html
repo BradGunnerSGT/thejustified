@@ -1,18 +1,22 @@
-  <nav class="top-bar" data-topbar role="navigation">
-        <ul class="title-area">
-		<li class="name"><h1><a href="{{site.url}}/"><img width="125px" src="{{site.url}}/images/{{site.data.images.logo_small}}" /></a></h1></li>
-	  <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-        </ul>
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <a href="{{site.url}}/">
+        <img width="125px" src="{{site.url}}/images/{{site.data.images.logo_small}}" />
+      </a>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+  </ul>
 
-        <section class="top-bar-section">
-          <ul class="right">
-             {% for link in site.data.navigation %}
-                 {% if link.url contains 'http' %} {% assign domain = '' %} {% else %} {% assign domain = site.url %} {% endif %}
-             <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
-             {% endfor %}
-          </ul>
-	  <ul class="left">
-	    <li><a href="#"></a></li>
-	  </ul>
-        </section>
-  </nav>
+  <section class="top-bar-section">
+    <ul class="right">
+      {% for link in site.data.navigation %}
+      {% if link.url contains 'http' %} {% assign domain = '' %} {% else %} {% assign domain = site.url %} {% endif %}
+      <li>
+        <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+
+  </section>
+</nav>
