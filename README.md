@@ -9,8 +9,8 @@ blog/site generator and the [Octopress](http://octopress.org) extensions to
 Jekyll. It's pretty much vanilla Jekyll with my own theme, Octopress v3 is
 mostly used for the deployment tools.
 
-The theme is based on the Foundation libraries and is designed to be a small
-one or two page band site. The main page is designed to have Reverbnation and
-Soundcloud panels.
+The theme is based on the [Foundation](http://foundation.zurb.com)
+CSS/Javascript framework and is designed to be a small one or two page band
+site. The main page is designed to have Reverbnation and Soundcloud panels.
 
 
